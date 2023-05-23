@@ -1,7 +1,9 @@
-import React, { useRef, useState } from 'react';
+
 import './App.css';
 import Navbar from './components/Navbar'
-import Searchbar from './components/Searchbar'
+import Content from './components/Content'
+import Contact from './components/Contact';
+
 function App() {
   // const [items,setItems] = useState([])
   // const inputRef = useRef()
@@ -23,8 +25,12 @@ function App() {
   // }
   return (
    <>
+   <Navbar />
 
-   <Searchbar />
+   {/* <Text /> */}
+
+   <Content />
+   <Contact />
    <br />
    {/* <div className='Search'>
    Search:
@@ -39,6 +45,7 @@ function App() {
     <div>{item}</div>
    ))}
     </div> */}
+    
    </>
   );
 }
